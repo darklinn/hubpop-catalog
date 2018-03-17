@@ -11,7 +11,7 @@ services:
   gitlab-server:
     ports:
       - ${ssh_port}:22/tcp
-      - ${http_port}:28080/tcp
+      - ${http_port}:80/tcp
       - ${https_port}:443/tcp
     labels:
       io.rancher.container.hostname_override: container_name
