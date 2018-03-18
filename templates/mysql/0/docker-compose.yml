@@ -9,7 +9,7 @@ services:
     labels:
       io.rancher.container.start_once: true
     volumes:
-      - /var/lib/mysql
+      - /WORK/mysql
   mysql:
     image: ${mysql_image}
     environment:
