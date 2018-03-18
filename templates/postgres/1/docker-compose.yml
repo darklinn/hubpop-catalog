@@ -22,7 +22,7 @@ services:
   postgres:
     image: postgres:${POSTGRES_TAG}
     environment:
-      PGDATA: /WORK/postgresql/data/pgdata
+      PGDATA: /var/lib/postgresql/data/pgdata
       POSTGRES_DB: ${postgres_db}
       POSTGRES_USER: ${postgres_user}
       POSTGRES_PASSWORD: ${postgres_password}
