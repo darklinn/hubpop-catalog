@@ -41,7 +41,7 @@ catalog:
       label: "mongo scale"
       type: "int"
       required: true
-      default: "2"
+      default: "1"
 services:
   mongo-cluster:
     scale: ${mongo_scale}
