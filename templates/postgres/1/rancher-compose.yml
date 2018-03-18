@@ -59,6 +59,7 @@ catalog:
       default: "local"
       type: enum
       options: # List of options if using type of `enum`
+        - /WORK/postgresql
         - local
         - rancher-nfs
         - rancher-efs
