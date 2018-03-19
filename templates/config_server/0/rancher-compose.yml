@@ -3,7 +3,7 @@
   version: "v1"
   description: "Config Server"
   uuid: config_server-1
-  
+
 configserver:
   scale: 1
 #  health_check:
