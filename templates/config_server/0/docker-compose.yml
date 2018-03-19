@@ -1,7 +1,8 @@
 version: '2'
 volumes:
   git-repo:
-    driver: ${volumedriver}
+    driver: local
+    external: true
 
 services:
 
