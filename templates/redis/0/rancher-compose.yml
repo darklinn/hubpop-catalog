@@ -4,5 +4,5 @@
   description: ''
   uuid: redis-1
 
-cb:
+redis:
   scale: 1
