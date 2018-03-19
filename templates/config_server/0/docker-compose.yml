@@ -1,4 +1,7 @@
 version: '2'
+volumes:
+  git-repo:
+    driver: ${volumedriver}
 
 services:
 
@@ -7,5 +10,5 @@ services:
     ports:
      - "28888:28888"
     volumes:
-     - /WORK/APIGW/config-repo:/WORK/APIGW/config-repo
+     - git-repo:/WORK/APIGW/config-repo
 #    container_name: context-broker

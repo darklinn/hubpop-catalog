@@ -3,6 +3,17 @@
   version: "v1"
   description: "Config Server"
   uuid: config_server-1
+  
+  questions:
+    - variable: "volumedriver"
+      description: "Choose the Volume Driver being used.(Option: local or rancher-nfs)"
+      label: "Volume Driver:"
+      required: true
+      default: local
+      type: "enum"
+      options:
+        - local
+        - rancher-nfs  
 
 configserver:
   scale: 1
