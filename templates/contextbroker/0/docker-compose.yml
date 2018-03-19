@@ -7,6 +7,6 @@ services:
     image: '${image}'
 #    external_links:
 #    - 'redis:redis'
-    mem_limit: 1000000000
-    memswap_limit: 2000000000
+#    mem_limit: 1000000000
+#    memswap_limit: 2000000000
 #    mem_reservation: 512m
