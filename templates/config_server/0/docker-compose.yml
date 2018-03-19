@@ -1,8 +1,7 @@
 version: '2'
 volumes:
   git-repo:
-    driver: local
-    external: true
+    driver: /WORK/APIGW/config-repo
 
 services:
   configserver:
