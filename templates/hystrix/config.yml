@@ -1,0 +1,8 @@
+name: 8 Hystrix Dashboard
+description: |
+  Hystrix Dashboard 
+version: v1
+category: Applications
+maintainer: Inha, Park <darklinn@ntels.com>
+labels:
+  io.rancher.certified: Hubpop
