@@ -3,6 +3,12 @@
   version: "v1.5"
   description: ""
   uuid: context-broker-1
+  questions:  
+    - variable: image
+      label: "Image"
+      type: "string"
+      default: ""
+      required: true  
 
 cb:
   scale: 1

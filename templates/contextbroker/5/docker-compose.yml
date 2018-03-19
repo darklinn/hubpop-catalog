@@ -3,13 +3,10 @@ version: '2'
 services:
 
   cb:
-    image: '112.160.104.138:21112/context_broker:5.0'
+    #image: '112.160.104.138:21112/context_broker:5.0'
+    image: '${image}'
     external_links:
     - 'redis:redis'
     mem_limit: 1000000000
     memswap_limit: 2000000000
 #    mem_reservation: 512m
-    
-#    ports:
-#     - '28810:48810'
-#    container_name: context-broker
