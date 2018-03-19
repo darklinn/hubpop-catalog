@@ -1,11 +1,18 @@
 .catalog:
   name: "Context Broker"
-  version: "v1.4"
+  version: "v1.0"
   description: ""
   uuid: context-broker-1
+  questions:  
+    - variable: image
+      label: "Image"
+      type: "string"
+      default: ""
+      required: true  
 
 cb:
-  scale: 2
+  scale: 1
+  
 #  health_check:
 #    port: 28810
 #    interval: 3000
