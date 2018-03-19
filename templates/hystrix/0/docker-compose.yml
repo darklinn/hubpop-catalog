@@ -4,6 +4,6 @@ services:
 
   hystrixdashboard:
     image: '112.160.104.138:21112/hystrix:1.0'
-#    ports:
-#     - "28888:28888"
+    ports:
+     - "29999:29999"
 #    container_name: context-broker
