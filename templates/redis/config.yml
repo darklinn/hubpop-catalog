@@ -1,7 +1,7 @@
 name: Redis
 description: |
-  Redis Replica Set.
-version: "3.4-rancher1"
+  Redis
+version: 'latest'
 category: Databases
 labels:
   io.rancher.certified: Hubpop
