@@ -1,18 +1,16 @@
-# MongoDB
+# Redis
 
 
 ### Info:
 
- This template creates MongoDB replica set on top of Rancher. Replica set size starts with 3 MongoDB instances, the replica set has the ability to scale up automatically when adding new instances. 
+ This template creates Redis on top of Rancher. 
  
  
 ### Usage:
 
- Select MongoDB from catalog. 
- 
- Enter the name of the replica set.
+ Select Redis from catalog.
  
  Click deploy.
  
- MongoDB can now be accessed over the Rancher network. 
+ Redis can now be accessed over the Rancher network. 
  
