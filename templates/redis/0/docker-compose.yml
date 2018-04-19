@@ -1,13 +1,12 @@
 version: '2'
 services:
   redis:
+    hostname: redis
     image: redis
     command: --appendonly yes
-    hostname: redis
-    networks:
-      - redis-net
     ports:
       - '16379:6379'
     volumes:
       - /WORK/redis-data:/data
-  
+ 
+ # 외부 설정 파일 사용?
