@@ -5,6 +5,13 @@ catalog:
   description: | 
     Redmine
   questions:
+  - variable: host_label
+    label: "Host Label"
+    description: |
+      Host label where deploy kafka. E.G.: 'kafka=true'
+    required: false
+    default: ""
+    type: "string"
 #  - variable: "REDMINE_HOST"
 #    description: "Hostname to use for the Redmine"
 #    label: "Thalhalla Store Hostname"
