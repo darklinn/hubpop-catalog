@@ -2,7 +2,7 @@ version: '2'
 services:
   redis:
     image: redis
-#    command: ["redis-server", "--appendonly", "yes"]
+    command: --appendonly yes
     hostname: redis
     networks:
       - redis-net
