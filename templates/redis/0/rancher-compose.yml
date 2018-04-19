@@ -1,8 +1,16 @@
-.catalog:
-  name: 'Redis'
-  version: 'latest'
+version: '2'
+catalog:
+  name: Redis
+  version: latest
   description: ''
-  uuid: redis-1
-
+  uuid: redis-0
+  questions:
+  - variable: host_label 
+    label: "Host Label"
+    description: |
+    Host label where deploy redis. E.G.: 'redis=true'
+    required: false
+    default: ""
+    type: "string"
 redis:
   scale: 1
