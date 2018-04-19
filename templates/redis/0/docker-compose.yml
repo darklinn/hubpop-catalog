@@ -10,6 +10,6 @@ services:
       - redis-net
     ports:
       - '16379:6379'
-#    volumes:
-#      - redis-data:/data
+    volumes:
+      - /docker/host/dir:/redis-data
   
