@@ -1,14 +1,13 @@
 version: '2'
 services:
   redis:
-#    image: redis:4.0.5-alpine
-#    command: ["redis-server", "--appendonly", "yes"]
     image: redis
+#    command: ["redis-server", "--appendonly", "yes"]
     hostname: redis
     networks:
       - redis-net
     ports:
       - '16379:6379'
     volumes:
-      - /docker/host/dir:/WORK/redis-data
+      - /WORK/redis-data:/data
   
