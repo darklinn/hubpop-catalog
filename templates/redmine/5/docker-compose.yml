@@ -1,24 +1,6 @@
 version: '2'
 services:
-  redmine:
-    image: redmine
-#    build: redmine-test:0.1
-    ports:
-    - '33456:3000'
-    labels:
-      io.rancher.container.hostname_override: container_name
-      io.rancher.container.pull_image: always
-      io.rancher.scheduler.affinity:host_label: ${host_label}
-    environment:
-    - REDMINE_DB_MYSQL=dbredmine
-    - REDMINE_DB_USERNAME=redmine
-    - REDMINE_DB_PASSWORD=redmine
-    - REDMINE_DB_DATABASE=redmine
-    - REDMINE_DB_ENCODING=utf8
-    volumes:
-      - /WORK/redmine/plugins:/usr/src/redmine/plugins
-      - /WORK/redmine/themes:/usr/src/redmine/public/themes
-      - /WORK/redmine/files:/usr/src/redmine/files
+
   dbredmine:
     image: mysql:5.7
     ports:
@@ -39,3 +21,25 @@ services:
 #     - --collation-server=utf8mb4_unicode_ci
 #     - --init-connect='SET NAMES UTF8
 #     - --innodb-flush-log-at-trx-commit=0
+
+  redmine:
+    image: redmine
+#    build: redmine-test:0.1
+    depends_on:
+    - dbredmine
+    ports:
+    - '33456:3000'
+    labels:
+      io.rancher.container.hostname_override: container_name
+      io.rancher.container.pull_image: always
+      io.rancher.scheduler.affinity:host_label: ${host_label}
+    environment:
+    - REDMINE_DB_MYSQL=dbredmine
+    - REDMINE_DB_USERNAME=redmine
+    - REDMINE_DB_PASSWORD=redmine
+    - REDMINE_DB_DATABASE=redmine
+    - REDMINE_DB_ENCODING=utf8
+    volumes:
+      - /WORK/redmine/plugins:/usr/src/redmine/plugins
+      - /WORK/redmine/themes:/usr/src/redmine/public/themes
+      - /WORK/redmine/files:/usr/src/redmine/files
