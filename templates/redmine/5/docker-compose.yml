@@ -1,7 +1,7 @@
 version: '2'
 services:
-  redmine-test:
-    image: redmine-test:0.1
+  redmine:
+    image: redmine
 #    build: redmine-test:0.1
     ports:
     - '33456:3000'
