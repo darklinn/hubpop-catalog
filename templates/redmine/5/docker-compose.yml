@@ -2,7 +2,7 @@ version: '2'
 services:
   redmine:
 #    image: redmine
-    image: redmin-test
+    image: redmin-test:0.1
     ports:
     - '33456:3000'
     labels:
