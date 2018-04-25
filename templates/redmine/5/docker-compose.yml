@@ -23,8 +23,8 @@ services:
 #     - --innodb-flush-log-at-trx-commit=0
 
   redmine:
-    image: redmine
-#    build: redmine-test:0.1
+#    image: redmine
+    image: 112.160.104.138:28810/redmine_jenkins:0.1
     depends_on:
     - dbredmine
     ports:
