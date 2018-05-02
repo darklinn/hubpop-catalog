@@ -7,3 +7,4 @@ Stack based on official GitLab version: latest
 https://hub.docker.com/r/gitlab/gitlab-ce/
 
 
+
