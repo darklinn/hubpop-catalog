@@ -56,7 +56,14 @@
       options:
         - local
         - rancher-nfs
-
+    - variable: host_label
+      label: "Host Label"
+      description: |
+        Host label where deploy GitLab. CE: 'gitlab=true'
+      required: false
+      default: ""
+      type: "string"
+      
 gitlab-server:
   scale: 1
   retain_ip: true

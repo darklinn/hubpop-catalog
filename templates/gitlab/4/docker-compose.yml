@@ -15,6 +15,7 @@ services:
       - ${https_port}:443/tcp
     labels:
       io.rancher.container.hostname_override: container_name
+      io.rancher.scheduler.affinity:host_label: ${host_label}
     image: gitlab/gitlab-ce:9.5.10-ce.0
     volumes:
       - gitlab-app-data:/WORK/gitlab/data
